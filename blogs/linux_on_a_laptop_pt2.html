@@ -11,18 +11,17 @@
 		
 		<link href="../_app/immutable/assets/2.C0qA3jsT.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ThemePicker.DMsgBxeN.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DsDAWRDa.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.S260vdOr.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.ORCIa6is.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.C13fYwNH.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.5hLoYk8p.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.B12WTwii.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.BS6XLBAN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/2.CV0Lz2sR.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/themes.CaVAywru.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.r49h3Q0t.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Bg8Pjxbv.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.D4tQEfxT.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.DdhwXfQk.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.D-MFiKiU.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.NO1YNLBk.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DodizzUc.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.KFemcygq.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.DSLR_JO4.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/core.Bns4Tjg1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.DwLp4bwj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.Cre-s-j9.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.CQIzwnhU.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-w4rn2a"><option id="gruvbox" value="gruvbox" class="svelte-w4rn2a" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="dracula" value="dracula" class="svelte-w4rn2a" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-w4rn2a" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-f36rmi"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="linux-on-a-laptop-my-experience-pt-2-" data-svelte-h="svelte-npacfl">Linux on a Laptop: My Experience (pt. 2)</h1> <p data-svelte-h="svelte-lw9k3d">Hello again! If you&#39;re here from Part 1, great! I&#39;m glad you&#39;re interested in this nonsense. If not, I would encourage you to read up the post before this as it has a lot of base-level information for my laptop Linux installation and my reasons for choosing Linux specifically, as well as choice of distro and the like. Anyways, this is part 2, where I intend to cover some of the more practical positions and laptop-specifics. For example, I want to talk about <a href="https://suckless.org/dwm">dwm</a>, my window manager of choice, and all the tools that I integrate into my workflow. Then I&#39;ll just talk a bit about why I love key-binds and key-chords and some laptop-specific obstacles I came across while putting together my system.</p> <p data-svelte-h="svelte-jgmcjb">One program that I should mention before everything else is fuzzy-pkg. A no-frills, fuzzy-finding, tui frontend for xbps. But when I tell you installing packages has never been easier, I mean it. Everything is a simple search away, and sometimes I don&#39;t even consult the internet if I need a specific program. I can fuzzy find a general description like &quot;CAD&quot; or &quot;Minecraft,&quot; and I&#39;ll get a bunch of results related to CAD software or Minecraft launchers. I say this first because it opens the door to making system configuration so fast and simple.</p> <h2 id="dwm-and-company" data-svelte-h="svelte-1hq0wja">DWM and Company</h2> <p data-svelte-h="svelte-15fy53e"><a href="https://suckless.org/dwm">dwm</a> is a dynamic tiling window manager that runs off the X.org window server. It embodies many Suckless ideals, as it&#39;s one of the team&#39;s most popular pieces of software. I won&#39;t get into their philosophy here, but I would point you to a small article made by none other than <a href="https://squi.bid">squibid</a> about [why suckless software is important][the link and shit]. At its core, dwm is very simple and just provides key-binds to open a terminal, switch tags, and launch dmenu, if installed. <a href="https://suckless.org/dmenu">dmenu</a> is an <em>essential</em>, but honestly, seldom used tool. From what I know, it can do a lot more than just launch programs, but by default in dwm, pressing &#39;mod-p&#39; opens up dmenu in order to launch an application the user has installed. It provides search functionality, although not fuzzy, to easily find the application you need. Now some people may be turned off by the lack of fuzzy search, but this is where all Suckless software shines, in my opinion, patches.</p> <p data-svelte-h="svelte-s2gkc0">Patches are just file diffs provided by the Suckless team and community in order to add functionality to the base of most Suckless software. This is the main reason why Suckles software comes so &quot;bare bones&quot; out of the box, because the software is a starting point for any users to build their own tool however they like it with patches. I quite like this approach to software. Patches can become unwieldy if many are applied, but if you know your way around a diff and keep a git repo of your changes, it&#39;s pretty easy to keep your configs safe.</p> <p data-svelte-h="svelte-1c3cgyy">As for specifics on other programs, I mentioned slstatus which is a status bar (helper) for dwm. Every module is just a simple c program that pulls the data from some external file or script and feeds it into the status bar, specified by the config file. I also took the liberty of applying the Minecraft game font as my dwm bar font, which is always a good conversation starter.</p> <p data-svelte-h="svelte-1y3iuiv"><img src="../images/dwm_status_bar.png" alt="dwm status bar with Minecraft font"></p> <p data-svelte-h="svelte-5gma46">In my bar, I was also able to design a module that will tell me if I have Bluetooth enabled or disabled by using another module as a simple template. I don&#39;t actually use this anymore, but I liked the little task anyway. Additionally, the provided volume display didn&#39;t work out of the box, but I was easily able to redesign it to work well with my audio setup (I think they have a patch for ALSA). Audio isn&#39;t easy on Linux, and to be honest, I ended up installing drivers for anything I saw online until it worked.
@@ -30,7 +29,7 @@ Finally, I found it easy to change the provided battery module to also indicate 
 			
 			<script>
 				{
-					__sveltekit_du9lxu = {
+					__sveltekit_v0aqph = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -39,11 +38,11 @@ Finally, I found it easy to change the provided battery module to also indicate 
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.DsDAWRDa.js"),
-						import("../_app/immutable/entry/app.5hLoYk8p.js")
+						import("../_app/immutable/entry/start.r49h3Q0t.js"),
+						import("../_app/immutable/entry/app.D-MFiKiU.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2, 7],
+							node_ids: [0, 2, 6],
 							data,
 							form: null,
 							error: null
