@@ -142,6 +142,25 @@
 				]]>
 			</description>
 		</item>
+	<item>
+		<title>Get Ready for Advent of Code</title>
+		<guid>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</guid>
+		<link>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</link>
+		<pubDate>Wednesday, 20 Nov 2024</pubDate>
+		<description>
+			<![CDATA[
+			<!doctype html>
+			<html>
+				<head>
+					<title>Get Ready for Advent of Code</title>
+				</head>
+				<body>
+					<h1><a href="https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html">Get Ready for Advent of Code</a></h1>
+				</body>
+			</html>
+			]]>
+		</description>
+	</item>
 	</channel>
 </rss>
 
