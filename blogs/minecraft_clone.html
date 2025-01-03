@@ -11,17 +11,17 @@
 		
 		<link href="../_app/immutable/assets/2.6t7KzdeC.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ThemePicker.CCYB0bOz.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.axzGP_gQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.zxJcFHRH.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DcsCV8Cc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Dpjl6iIX.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.D4tQEfxT.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.DdhwXfQk.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BtlNRWPX.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.xqt056o5.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.NO1YNLBk.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.DodizzUc.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/2.BvJ9gjOx.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.Dhg5r6KO.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/cpp.ailBGQc5.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/9.B5WsWWlb.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/10.B5WsWWlb.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-jiyd0g"><option id="gruvbox" value="gruvbox" class="svelte-jiyd0g" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="dracula" value="dracula" class="svelte-jiyd0g" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-jiyd0g" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-z4w09v"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <title data-svelte-h="svelte-pn40vu">Minecraft Clone</title> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Discover the journey of building a Minecraft clone using C++ and OpenGL, including insights on graphics programming, terrain generation, and face culling."> <meta name="keywords" content="Minecraft clone, C++, OpenGL, graphics programming, Perlin noise, game development, face culling, block rendering, debugging in C++, gdb, makefile"> <meta name="author" content="Harrison DiAmbrosio"> <h1 id="minecraft-clone" data-svelte-h="svelte-3yv86n">Minecraft Clone</h1> <p data-svelte-h="svelte-1au1nq6">Honestly I&#39;m surprise I haven&#39;t created something of a Minecraft clone already. I originally just wanted to play around with more in depth graphics programming (in 3D specifically) and prior to this I had only ever used <a href="https://processing.org/">Processing</a> and <a href="https://p5js.org/">p5.js</a>&#39;s 3D rendering capabilities, as well as <a href="https://threejs.org/">Three.js</a> for a cool basic online multiplayer game. Obviously these come with the benefits of JavaScript, but sadly,they also come with the drawbacks of JavaScript (or Java in the case of Processing). Because of this and a desire to improve my handle on the C++ standard lib, STL and language in general, I decided between OpenGL or Vulkan, which led me to pick OpenGL almost arbitrarily. I&#39;ve heard a lot about the two previously, and from my limited research I found that Vulkan was more &quot;low-level&quot; than OpenGL and therefore could get more performance squeezed out of it, but still it was harder and this was my first time being in the weeds of graphics programming, so I thought I&#39;d make things easy for myself and switch later if I felt I needed to.</p> <p data-svelte-h="svelte-w8ywy6">At this point, the people of reddit praised <a href="https://learnopengl.com/">learnopengl.org</a> so I followed it&#39;s tutorials, and would recommend it, or it&#39;s physical bool version, to anyone interested in dipping their toes. Either way, I got through the basics of rendering and started to figure out how I would put together a little Minecraft simulation, which I ended up deciding to call <a href="https://github.com/EggbertFluffle/Mingleburb">Mingleburb</a> for no reason other than I thought it was funny.</p> <p data-svelte-h="svelte-9rqcdu">First, what do I want to happen with this little experiment:</p> <ol data-svelte-h="svelte-1mzly7y"><li>I want to be able to render blocks of different textures with culled faces (more on that later)</li> <li>Those blocks should be generated using Perlin Noise and held in chunks</li> <li>There should be free cam controls using the wasd and arrow key/mouse controls</li> <li>Blocks should be removable and placable by the player relative to where they look</li> <li>The entire project should be organized, from the make files, to the encapsulation of classes</li></ol> <h2 id="world-data-pt-1-" data-svelte-h="svelte-i6xfj1">World Data (pt.1)</h2> <p data-svelte-h="svelte-h94sl5">The first and easiest bit to tackle was the creation of rendered blocks, and to do this I started by just creating a simple block struct that held some data. In my thinking, I wanted to hold the least amount of data possible for each block, and tried to make it&#39;s footprint as small as possible. I&#39;ll talk about the faces member variable later, but the others are pretty self explanatory, though they were modified later to be more efficient (as of now I&#39;m being punished for fixing something that already worked as the entire simulation is bugged because of my memory greed T-T).</p> <pre data-svelte-h="svelte-a5wqf6"><code class="lang-c++"><span class="hljs-comment">// Block.hpp</span>
@@ -92,7 +92,7 @@ Block(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</s
 			
 			<script>
 				{
-					__sveltekit_ny1ro3 = {
+					__sveltekit_m46azg = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -101,11 +101,11 @@ Block(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</s
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.axzGP_gQ.js"),
-						import("../_app/immutable/entry/app.BtlNRWPX.js")
+						import("../_app/immutable/entry/start.DcsCV8Cc.js"),
+						import("../_app/immutable/entry/app.xqt056o5.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2, 9],
+							node_ids: [0, 2, 10],
 							data,
 							form: null,
 							error: null

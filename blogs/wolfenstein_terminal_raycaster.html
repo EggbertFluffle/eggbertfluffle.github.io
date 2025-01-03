@@ -11,17 +11,17 @@
 		
 		<link href="../_app/immutable/assets/2.6t7KzdeC.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ThemePicker.CCYB0bOz.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.axzGP_gQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.zxJcFHRH.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DcsCV8Cc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Dpjl6iIX.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.D4tQEfxT.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.DdhwXfQk.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BtlNRWPX.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.xqt056o5.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.NO1YNLBk.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.DodizzUc.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/2.BvJ9gjOx.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.Dhg5r6KO.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/cpp.ailBGQc5.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/12.Ce4yrSSa.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/13.Ce4yrSSa.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-jiyd0g"><option id="gruvbox" value="gruvbox" class="svelte-jiyd0g" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="dracula" value="dracula" class="svelte-jiyd0g" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-jiyd0g" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-z4w09v"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="wolfenstein-terminal-raycaster" data-svelte-h="svelte-1q0ssw2">Wolfenstein Terminal Raycaster</h1> <p data-svelte-h="svelte-dlele3">So after watching a video from the YouTuber <a href="https://www.youtube.com/watch?v=fSjc8vLMg8c">jdh</a> I was heavily to make a Wolfenstein 3D-style renderer myself. But since my previous project, I was still into the TUI 3D rendering style. TUI stands for <strong>T</strong>ext <strong>U</strong>ser <strong>I</strong>nterface and most commonly, any program with a UI in the shell will be considered a TUI application. They will almost most commonly be using curses, or in my case, <a href="https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/">ncurses</a>, to handle the complex terminal escape codes and portability to other operating systems. I intend to make this an understanding of the <em>math</em> that goes behind this truly 2D raycast renderer without delving so much into application. The same principles can be applied in almost any language or graphics medium, so I encourage you to come up with a really creative method; shoot me an email if you do! Finally, my program is written in C++ and is a mess, so that&#39;s why I&#39;m keeping the actual code to a minimum.</p> <h2 id="introduction" data-svelte-h="svelte-p88ani">Introduction</h2> <p data-svelte-h="svelte-34mk81">Wolfenstein 3D was a revolutionary game that was one of the first &quot;3D&quot; gaming experiences. The thing is, it wasn&#39;t actually 3D, and the entirety of the game was really happening in 2D. What the player saw was an illusion, the 2D space was &quot;projected&quot; using 2D raycasting. Raycasting in general is a method of graphics where a ray is cast out of every single pixel on the screen to calculate what it collides with and how far it will travel until it collides with something. As you can imagine, thats a lot of math for each pixel, which puts 3 dimensional raycasting way out of the time&#39;s computing power. What the authors of Wolfenstein did was extrapolate extra information from rays that were cast only for each x pixel. Additionally, Wolfenstein used a grid to represent it&#39;s map, meaning each cell of the map was either a wall or empty space, and each ray would have to traverse this map grid. Of course, raycasting as we know it today hadn&#39;t even existed, and raycasting in 2 dimensions was actually the first step; 3D came <em>much</em> later.</p> <p data-svelte-h="svelte-5m62i8">Put simply, 2D raycasting follows these simple steps:</p> <ol data-svelte-h="svelte-47j7li"><li>Cast a ray out from the player for each column of pixels on the screen</li> <li>Follow each ray until it collides with a wall or reaches some maximum distance.
@@ -58,7 +58,7 @@ player.TakePerspective(&amp;distances, &amp;hits, &amp;uTexCoords, &amp;map, &am
 			
 			<script>
 				{
-					__sveltekit_ny1ro3 = {
+					__sveltekit_m46azg = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -67,11 +67,11 @@ player.TakePerspective(&amp;distances, &amp;hits, &amp;uTexCoords, &amp;map, &am
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.axzGP_gQ.js"),
-						import("../_app/immutable/entry/app.BtlNRWPX.js")
+						import("../_app/immutable/entry/start.DcsCV8Cc.js"),
+						import("../_app/immutable/entry/app.xqt056o5.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2, 12],
+							node_ids: [0, 2, 13],
 							data,
 							form: null,
 							error: null
