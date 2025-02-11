@@ -142,49 +142,68 @@
 				]]>
 			</description>
 		</item>
-	<item>
-		<title>Get Ready for Advent of Code</title>
-		<guid>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</guid>
-		<link>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</link>
-		<pubDate>Wednesday, 20 Nov 2024</pubDate>
-		<description>
-			<![CDATA[
-			<!doctype html>
-			<html>
-				<head>
-					<title>Get Ready for Advent of Code</title>
-				</head>
-				<body>
-					<h1><a href="https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html">Get Ready for Advent of Code</a></h1>
-				</body>
-			</html>
-			]]>
-		</description>
-	</item>
+		<item>
+			<title>Get Ready for Advent of Code</title>
+			<guid>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</guid>
+			<link>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</link>
+			<pubDate>Wednesday, 20 Nov 2024</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Get Ready for Advent of Code</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html">Get Ready for Advent of Code</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Advent of Code: How its Going</title>
+			<link>https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html</link>
+			<pubDate>Wed, 19 12 2024</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Advent of Code: How its Going</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html">Advent of Code: How its Going</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
+		<item>
+			<guid>https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html</guid>
+			<title>Hello? Is Anyone There?</title>
+			<link>https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html</link>
+			<pubDate>Tues, 11 February 2025</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Hello? Is Anyone There?</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html">{TITLE}</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
 	</channel>
-	<item>
-		<title>Advent of Code: How its Going</title>
-		<link>https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html</link>
-		<pubDate>Wed, 19 12 2024</pubDate>
-		<description>
-			<![CDATA[
-			<!doctype html>
-			<html>
-				<head>
-					<title>Advent of Code: How its Going</title>
-				</head>
-				<body>
-					<h1><a href="https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html">Advent of Code: How its Going</a></h1>
-				</body>
-			</html>
-			]]>
-		</description>
-	</item>
 </rss>
 
-<!-- 	<guid>https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html</guid> -->
 <!-- <item> -->
-	<!-- 	<title>{TITLE}</title> -->
+<!-- 	<guid>https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html</guid> -->
+<!-- 	<title>{TITLE}</title> -->
 <!-- 	<link>https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html</link> -->
 <!-- 	<pubDate>{DAY_OF_THE_WEEK}, {DAY} {MONTH} {YEAR}</pubDate> -->
 <!-- 	<description> -->
