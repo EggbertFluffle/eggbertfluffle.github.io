@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Harrison DiAmbrosio</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Harrison DiAmbrosio" />
+		<meta name="dscription" content="Personal site and blog" />
+		<meta name="keywords" content="HTML, CSS, JavaScript, computer science, graphics">
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/2.B9wTUvQi.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ThemePicker.BeoFIKDJ.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DcvjdJqo.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.tK7OYr-X.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.D4tQEfxT.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.DdhwXfQk.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BfQaJgE7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CjaTeyWn.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.BV82geFu.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.BSso9i7R.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.0xdHABHw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/cpp.ailBGQc5.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/12.t4g1nxXR.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-1qtfkri"><option id="gruvbox" value="gruvbox" class="svelte-1qtfkri" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-1qtfkri" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-1qtfkri" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-1qtfkri" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-3egbdz"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="oh-zig-my-beloved" data-svelte-h="svelte-uanao7">Oh Zig my Beloved</h1> <p data-svelte-h="svelte-o6brbf">For a while now, I have been learning the deep intricacies of C++. The more I learn about the language, the faster I see that I will never know anywhere close to all of it until I embody the life of <a href="https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw">Jason Turner</a>. I don&#39;t expect to know <strong>all</strong> of any language really, but in my struggle with C++ (<em>which I still hold very near and dear to my heart</em>), there was one thing that I just could not tolerate: the tooling. The lack of official tooling makes the language harder to use since building a C++ project is only simple if you just press play in VS Code.</p> <p data-svelte-h="svelte-nsrg9p">Without hand holding, you need to figure out how you&#39;re going to include libraries, pick a compiler to use, think about a build system, worry about cross compilation etc. For <a href="https://github.com/EggbertFluffle/beepboop.nvim">beepboop.nvim</a> this was <strong>NOT</strong> something I wanted to tackle so I needed a solution to a deeply troubling quandry. I need a cross compilable library that would allow me to write cross compilable C++ with it.</p> <p data-svelte-h="svelte-1cawc2g">Now I will admit, that at this point I wasn&#39;t the most comfaterble with C++ and it&#39;s convoluted ecosystem, but in my defense, I wanted to build a companion binary to beepboop.nvim, not wrangle with C++ nonsensicalities. This is when the idea of approaching with other languages came to mind, and there were two options that made sense to me: Rust and Zig.</p> <h2 id="the-start-of-an-era" data-svelte-h="svelte-amu39q">The Start of an Era</h2> <div style="display: flex; justify-content: center;" data-svelte-h="svelte-1fgdatf"><img style="width: 15%" alt="ziglang logo" src="../images/zig_logo.png"></div> <p data-svelte-h="svelte-s7sepv">The choice boiled down to, Zig has a cooler logo, and the drama around Rust is annoying, so I chose Zig, and what a good decision that turned out to be. I had heard of the language as a reccomendation from a friend at first, but the buzz kept buzzing in my feed so I caved and started the tutorial hell, which didn&#39;t last long. Zig&#39;s headline features are presented as convenience over magic, which I prefer. The main attraction for me at the time was straightforward cross compilation. Unfortunately, it wasn&#39;t all on easy street, the native zig package manager is very heavily in development right now, and prompted me to look for other options, which led me to land on a quite magic discovery, their &quot;translate c&quot; feature.</p> <p data-svelte-h="svelte-1plnf4k">I figured there would be far more C libraries for cross platform audio playing than native Zig ones, so I found a quite popular option, miniaudio.h, and simply translated it into Zig for me to use to my heart&#39;s content. This was nearly painless (I understand now that it is possible to not even translate the C myself, and include the translation in the build file). From here the rest of the application was a simple model of the logic I had in the C++ version, but with a lot more error checking courtesy of Zig.</p> <h2 id="the-ugly" data-svelte-h="svelte-15pd8h">The Ugly</h2> <p data-svelte-h="svelte-1idplmo">Zig is really exciting, and I find learning about their design decisions to be a lot of fun. For example, one of Zig&#39;s defining qualities is the explicit use of allocators throughout the code, instead of just calling any old allocator from the system. This was already true, but recently, Zig has been trying to steer away from what they called &quot;managed&quot; allocation, over to &quot;unmanaged&quot; allocation. The difference lies in when the allocator is given to the data structure, either at intialization of the structure of for each allocation made by it.</p> <pre data-svelte-h="svelte-1c2bjaz"><code class="lang-zig">    <span class="hljs-comment">// Managed ArrayList</span>
+    <span class="hljs-keyword">const</span> arr = <span class="hljs-built_in">std</span>.ArrayList(i32).init(<span class="hljs-built_in">std</span>.heap.page_allocator);
+    <span class="hljs-keyword">try</span> arr.append(<span class="hljs-number">32</span>);
+
+    <span class="hljs-comment">// Unamanaged ArrayList</span>
+    <span class="hljs-keyword">const</span> arr = <span class="hljs-built_in">std</span>.ArrayList(i32).init();
+    <span class="hljs-keyword">try</span> arr.append(<span class="hljs-number">32</span>, <span class="hljs-built_in">std</span>.heap.page_allocator);
+</code></pre> <p data-svelte-h="svelte-1w8dlyt">The unmanaged approach is something I&#39;m not used to, but willing to try out. But as the header suggests, this is about the ugly. Although the error handling is comprehensive, I find when I just want to crank out some code to solve a problem, or for <a href="https://adventofcode.com">Advent of Code</a>, it just gets in the way. In the end this is a design decision so that Zig can be as error prone as possible, among a plethura of other measures, just me being picking. Ok enough waffling.</p> </main> 
+			
+			<script>
+				{
+					__sveltekit_1v1f4e3 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DcvjdJqo.js"),
+						import("../_app/immutable/entry/app.BfQaJgE7.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 12],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-color: #3c3836;
+		}
+
+		@font-face {
+			font-family: 'MonaspaceKR';
+			font-style: normal;
+			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
+		}
+
+		@font-face {
+			font-family: 'Ioskeva';
+			font-style: normal;
+			src: url('/fonts/Iosevka.ttf');
+		}
+	</style>
+</html>
