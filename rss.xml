@@ -198,6 +198,25 @@
 				]]>
 			</description>
 		</item>
+		<item>
+			<guid>https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html</guid>
+			<title>Oh Zig my Beloved</title>
+			<link>https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html</link>
+			<pubDate>Tuesday, 7 October 2025</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Oh Zig my Beloved</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html">Oh Zig my Beloved</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
 	</channel>
 </rss>
 
