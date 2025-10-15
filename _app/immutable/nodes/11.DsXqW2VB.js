@@ -1,29 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<title>Harrison DiAmbrosio</title>
-		<meta charset="utf-8" />
-		<meta name="author" content="Harrison DiAmbrosio" />
-		<meta name="dscription" content="Personal site and blog" />
-		<meta name="keywords" content="HTML, CSS, JavaScript, computer science, graphics">
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="../_app/immutable/assets/2.BWc5Yfsn.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/ThemePicker.BeoFIKDJ.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.BBVh3S6N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.D4W3-yCQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.DDaOzR71.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BkdrutWN.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.IUXyldyF.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXL903QX.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DbP1s1la.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/2.Ci1y03B7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.CI5fGfHs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/11.DsXqW2VB.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-1qtfkri"><option id="gruvbox" value="gruvbox" class="svelte-1qtfkri" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-1qtfkri" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-1qtfkri" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-1qtfkri" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-1vfhz2j"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="what-are-neocities" data-svelte-h="svelte-omhvg">What are Neocities</h1> <p data-svelte-h="svelte-cmvj7r">For the past couple of days, I have been sifting through the
+import{a as q,n as I}from"../chunks/scheduler.DDaOzR71.js";import{S as z,i as A,e as r,s as d,c as h,g as u,a as y,h as C,j as i,f as o}from"../chunks/index.CXL903QX.js";function G(W){let s,_="What are Neocities",g,c,j=`For the past couple of days, I have been sifting through the
 internet’s oldest tradition, neocities. Essentially, neocities is just a
 bunch of retro, internet personal websites that people make to talk
 about themselves, share gifs, show art, blog, connect with others, and
@@ -34,13 +9,13 @@ storage). This is great because I can host my site on neocities at <a href="http
 completely free. This is great and feels similar to GitHub pages and
 they also offer <a href="https://neocities.org/tutorials">tutorials</a>
 for things like HTML, CSS, and JavaScript that could prove useful to
-anyone interested in building their little corner of the internet.</p> <h2 id="social-aspect" data-svelte-h="svelte-jk3tol">Social aspect</h2> <p data-svelte-h="svelte-473u1d">Some get incredibly creative with the sites, but what sticks out to
+anyone interested in building their little corner of the internet.`,b,n,H="Social aspect",w,m,L=`Some get incredibly creative with the sites, but what sticks out to
 me is the robust social systems these completely independent sites have.
 There are so many methods of contacting others and I’ll just leave a
 short synopsis of those here because it’s honestly very impressive.
 These are completely independent minds that have all more or less
 agreed-upon methods of linking pages and having a social network within
-their neocities.</p> <ol type="1" data-svelte-h="svelte-wymxg2"><li>Regular old links: The obvious one. Just a link to another page.
+their neocities.`,v,a,M=`<li>Regular old links: The obvious one. Just a link to another page.
 Littered all across these neocities.</li> <li>88x31 buttons: These are probably the most creative in my opinion.
 Essentially if you wanted to, you would create a little 88 x 31 pixel
 gif with some animated art that would link back to your website and
@@ -72,7 +47,7 @@ your site access the sites of other people in the same webring as you.
 This can be great for small friend groups or even larger organizations,
 but with the larger webrings, the sense of community disappears, as it’s
 just a huge list of names that don’t have any organization or
-relation.</li></ol> <h2 id="final-thoughts" data-svelte-h="svelte-1lpmuf1">Final thoughts</h2> <p data-svelte-h="svelte-1j2m26n">Although I am hosting my site through the <a href="https://neocities.org">neocities</a> service, I was never on the
+relation.</li>`,k,l,S="Final thoughts",x,f,P=`Although I am hosting my site through the <a href="https://neocities.org">neocities</a> service, I was never on the
 internet for this era of what neocities are trying to emulate so I can’t
 relate to this style of web design, social interaction, and hobbying. I
 think the little communities that people form are fun to poke around in
@@ -82,7 +57,7 @@ neocities collide completely with my appeal for simple and minimal
 design. Also, there is just so much culture I don’t understand or relate
 to so that’s why I think it would be really cool if there was a more
 abstract way of socializing through personal websites on the
-internet.</p> <p data-svelte-h="svelte-ktsp86">What I really mean is this (and this may already exist), but a common
+internet.`,T,p,N=`What I really mean is this (and this may already exist), but a common
 way for more modern personal websites, personal blogging, and tech
 enthusiasts to find each other’s websites in a way like neocities
 offers. Number one, there’s the dense web of links, guest books, 88 x
@@ -94,54 +69,4 @@ to find one and start exploring. Other, non-neocity, personal websites
 have links and webrings, but the really tough part is first finding one.
 That’s where number two comes in, and I think a place where people could
 index and catalog a bunch of personal websites would be a great idea and
-get many more people excited about becoming their internet nomads.</p> </main> 
-			
-			<script>
-				{
-					__sveltekit_zlyl0z = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.BBVh3S6N.js"),
-						import("../_app/immutable/entry/app.IUXyldyF.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2, 11],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-	<style>
-		* {
-			margin: 0px;
-			padding: 0px;
-			scroll-behavior: smooth;
-		}
-
-		body {
-			background-color: #3c3836;
-		}
-
-		@font-face {
-			font-family: 'MonaspaceKR';
-			font-style: normal;
-			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
-		}
-
-		@font-face {
-			font-family: 'Ioskeva';
-			font-style: normal;
-			src: url('/fonts/Iosevka.ttf');
-		}
-	</style>
-</html>
+get many more people excited about becoming their internet nomads.`;return{c(){s=r("h1"),s.textContent=_,g=d(),c=r("p"),c.innerHTML=j,b=d(),n=r("h2"),n.textContent=H,w=d(),m=r("p"),m.textContent=L,v=d(),a=r("ol"),a.innerHTML=M,k=d(),l=r("h2"),l.textContent=S,x=d(),f=r("p"),f.innerHTML=P,T=d(),p=r("p"),p.textContent=N,this.h()},l(e){s=h(e,"H1",{id:!0,"data-svelte-h":!0}),u(s)!=="svelte-omhvg"&&(s.textContent=_),g=y(e),c=h(e,"P",{"data-svelte-h":!0}),u(c)!=="svelte-cmvj7r"&&(c.innerHTML=j),b=y(e),n=h(e,"H2",{id:!0,"data-svelte-h":!0}),u(n)!=="svelte-jk3tol"&&(n.textContent=H),w=y(e),m=h(e,"P",{"data-svelte-h":!0}),u(m)!=="svelte-473u1d"&&(m.textContent=L),v=y(e),a=h(e,"OL",{type:!0,"data-svelte-h":!0}),u(a)!=="svelte-wymxg2"&&(a.innerHTML=M),k=y(e),l=h(e,"H2",{id:!0,"data-svelte-h":!0}),u(l)!=="svelte-1lpmuf1"&&(l.textContent=S),x=y(e),f=h(e,"P",{"data-svelte-h":!0}),u(f)!=="svelte-1j2m26n"&&(f.innerHTML=P),T=y(e),p=h(e,"P",{"data-svelte-h":!0}),u(p)!=="svelte-ktsp86"&&(p.textContent=N),this.h()},h(){C(s,"id","what-are-neocities"),C(n,"id","social-aspect"),C(a,"type","1"),C(l,"id","final-thoughts")},m(e,t){i(e,s,t),i(e,g,t),i(e,c,t),i(e,b,t),i(e,n,t),i(e,w,t),i(e,m,t),i(e,v,t),i(e,a,t),i(e,k,t),i(e,l,t),i(e,x,t),i(e,f,t),i(e,T,t),i(e,p,t)},p:I,i:I,o:I,d(e){e&&(o(s),o(g),o(c),o(b),o(n),o(w),o(m),o(v),o(a),o(k),o(l),o(x),o(f),o(T),o(p))}}}class J extends z{constructor(s){super(),A(this,s,null,G,q,{})}}export{J as component};

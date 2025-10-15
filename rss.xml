@@ -4,13 +4,13 @@
 		<title>Eggbert's Blog</title>
 		<description>A personal blog about all things computers, tech, and science.</description>
 		<language>en-us</language>
-		<link>http://eggbertfluffle.github.io/rss.xml</link>
-		<atom:link href="http://eggbertfluffle.github.io/rss.xml" rel="self" type="application/rss+xml" />
+		<link>http://eggbert.xyz/rss.xml</link>
+		<atom:link href="http://eggbert.xyz/rss.xml" rel="self" type="application/rss+xml" />
 
 		<item>
 			<title>Terminal Based 3D Graphics</title>
-			<guid>https://eggbertfluffle.github.io/blogs/terminal_based_3d_graphics</guid>
-			<link>https://eggbertfluffle.github.io/blogs/terminal_based_3d_graphics</link>
+			<guid>https://eggbert.xyz/blogs/terminal_based_3d_graphics</guid>
+			<link>https://eggbert.xyz/blogs/terminal_based_3d_graphics</link>
 			<pubDate>Tue, 10 Oct 2023</pubDate>
 			<description>
 				<![CDATA[
@@ -20,7 +20,7 @@
 						<title>Terminal Based 3D Graphics</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/terminal_based_3d_graphics">Terminal Based 3D Graphics</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/terminal_based_3d_graphics">Terminal Based 3D Graphics</a></h1>
 					</body>
 				</html>
 					]]>
@@ -29,8 +29,8 @@
 
 		<item>
 			<title>Introduction</title>
-			<guid>https://eggbertfluffle.github.io/blogs/introduction</guid>
-			<link>https://eggbertfluffle.github.io/blogs/introduction</link>
+			<guid>https://eggbert.xyz/blogs/introduction</guid>
+			<link>https://eggbert.xyz/blogs/introduction</link>
 			<pubDate>Sun, 14 Jan 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -40,7 +40,7 @@
 						<title>Introduciton</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/introduction">Introducion</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/introduction">Introducion</a></h1>
 					</body>
 				</html>
 				]]>
@@ -49,8 +49,8 @@
 
 		<item>
 			<title>Wolfenstein Terminal Raycaster</title>
-			<guid>https://eggbertfluffle.github.io/blogs/wolfenstein_terminal_raycaster</guid>
-			<link>https://eggbertfluffle.github.io/blogs/wolfenstein_terminal_raycaster</link>
+			<guid>https://eggbert.xyz/blogs/wolfenstein_terminal_raycaster</guid>
+			<link>https://eggbert.xyz/blogs/wolfenstein_terminal_raycaster</link>
 			<pubDate>IDK</pubDate>
 			<description>
 				<![CDATA[
@@ -60,7 +60,7 @@
 						<title>Wolfenstein Teriminal Raycaster</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/wolfenstein_terminal_raycaster">Wolfenstein Terminal Raycaster</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/wolfenstein_terminal_raycaster">Wolfenstein Terminal Raycaster</a></h1>
 					</body>
 				</html>
 				]]>
@@ -68,8 +68,8 @@
 		</item>
 		<item>
 			<title>Neocities</title>
-			<guid>https://eggbertfluffle.github.io/blogs/neocities</guid>
-			<link>https://eggbertfluffle.github.io/blogs/neocities</link>
+			<guid>https://eggbert.xyz/blogs/neocities</guid>
+			<link>https://eggbert.xyz/blogs/neocities</link>
 			<pubDate>Fri, 3 Mar 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -79,7 +79,7 @@
 						<title>Neocities</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/neocities">Neocities</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/neocities">Neocities</a></h1>
 					</body>
 				</html>
 				]]>
@@ -87,8 +87,8 @@
 		</item>
 		<item>
 			<title>Minecraft Clone</title>
-			<guid>https://eggbertfluffle.github.io/blogs/minecraft_clone</guid>
-			<link>https://eggbertfluffle.github.io/blogs/minecraft_clone</link>
+			<guid>https://eggbert.xyz/blogs/minecraft_clone</guid>
+			<link>https://eggbert.xyz/blogs/minecraft_clone</link>
 			<pubDate>Tue, 16 May 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -98,7 +98,7 @@
 						<title>Minecraft Clone</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/minecraft_clone">Minecraft Clone</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/minecraft_clone">Minecraft Clone</a></h1>
 					</body>
 				</html>
 				]]>
@@ -106,8 +106,8 @@
 		</item>
 		<item>
 			<title>Linux on a Laptop: My Experience (pt.1)</title>
-			<guid>https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt1.html</guid>
-			<link>https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt1.html</link>
+			<guid>https://eggbert.xyz/blogs/linux_on_a_laptop_pt1.html</guid>
+			<link>https://eggbert.xyz/blogs/linux_on_a_laptop_pt1.html</link>
 			<pubDate>Sun, 2 Jun 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -117,7 +117,7 @@
 						<title>Linux on a Laptop: My Experience (pt.1)</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt1.html">Linux on a Laptop: My Experience (pt.1)</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/linux_on_a_laptop_pt1.html">Linux on a Laptop: My Experience (pt.1)</a></h1>
 					</body>
 				</html>
 				]]>
@@ -125,8 +125,8 @@
 		</item>
 		<item>
 			<title>Linux on a Laptop: My Experience (pt.2)</title>
-			<guid>https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt2.html</guid>
-			<link>https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt2.html</link>
+			<guid>https://eggbert.xyz/blogs/linux_on_a_laptop_pt2.html</guid>
+			<link>https://eggbert.xyz/blogs/linux_on_a_laptop_pt2.html</link>
 			<pubDate>Sun, 8 Sep 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -136,7 +136,7 @@
 						<title>Linux on a Laptop: My Experience (pt.2)</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/linux_on_a_laptop_pt2.html">Linux on a Laptop: My Experience (pt.2)</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/linux_on_a_laptop_pt2.html">Linux on a Laptop: My Experience (pt.2)</a></h1>
 					</body>
 				</html>
 				]]>
@@ -144,8 +144,8 @@
 		</item>
 		<item>
 			<title>Get Ready for Advent of Code</title>
-			<guid>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</guid>
-			<link>https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html</link>
+			<guid>https://eggbert.xyz/blogs/get_ready_for_advent_of_code.html</guid>
+			<link>https://eggbert.xyz/blogs/get_ready_for_advent_of_code.html</link>
 			<pubDate>Wednesday, 20 Nov 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -155,7 +155,7 @@
 						<title>Get Ready for Advent of Code</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/get_ready_for_advent_of_code.html">Get Ready for Advent of Code</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/get_ready_for_advent_of_code.html">Get Ready for Advent of Code</a></h1>
 					</body>
 				</html>
 				]]>
@@ -163,7 +163,7 @@
 		</item>
 		<item>
 			<title>Advent of Code: How its Going</title>
-			<link>https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html</link>
+			<link>https://eggbert.xyz/blogs/advent_of_code:_how_its_going.html</link>
 			<pubDate>Wed, 19 12 2024</pubDate>
 			<description>
 				<![CDATA[
@@ -173,16 +173,16 @@
 						<title>Advent of Code: How its Going</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/advent_of_code:_how_its_going.html">Advent of Code: How its Going</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/advent_of_code:_how_its_going.html">Advent of Code: How its Going</a></h1>
 					</body>
 				</html>
 				]]>
 			</description>
 		</item>
 		<item>
-			<guid>https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html</guid>
+			<guid>https://eggbert.xyz/blogs/hello_is_anyone_there.html</guid>
 			<title>Hello? Is Anyone There?</title>
-			<link>https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html</link>
+			<link>https://eggbert.xyz/blogs/hello_is_anyone_there.html</link>
 			<pubDate>Tues, 11 February 2025</pubDate>
 			<description>
 				<![CDATA[
@@ -192,16 +192,16 @@
 						<title>Hello? Is Anyone There?</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/hello_is_anyone_there.html">{TITLE}</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/hello_is_anyone_there.html">{TITLE}</a></h1>
 					</body>
 				</html>
 				]]>
 			</description>
 		</item>
 		<item>
-			<guid>https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html</guid>
+			<guid>https://eggbert.xyz/blogs/oh_zig_my_beloved.html</guid>
 			<title>Oh Zig my Beloved</title>
-			<link>https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html</link>
+			<link>https://eggbert.xyz/blogs/oh_zig_my_beloved.html</link>
 			<pubDate>Tuesday, 7 October 2025</pubDate>
 			<description>
 				<![CDATA[
@@ -211,7 +211,26 @@
 						<title>Oh Zig my Beloved</title>
 					</head>
 					<body>
-						<h1><a href="https://eggbertfluffle.github.io/blogs/oh_zig_my_beloved.html">Oh Zig my Beloved</a></h1>
+						<h1><a href="https://eggbert.xyz/blogs/oh_zig_my_beloved.html">Oh Zig my Beloved</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
+		<item>
+			<guid>https://eggbert.xyz/blogs/neovim_configuration_an_empirical_analysis.html</guid>
+			<title>Neovim Configuration: An Empirical Analysis</title>
+			<link>https://eggbert.xyz/blogs/neovim_configuration_an_empirical_analysis.html</link>
+			<pubDate>Tuesday, October 14th, 2025</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Neovim Configuration: An Empirical Analysis</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbert.xyz/blogs/neovim_configuration_an_empirical_analysis.html">Neovim Configuration: An Empirical Analysis</a></h1>
 					</body>
 				</html>
 				]]>
@@ -221,9 +240,9 @@
 </rss>
 
 <!-- <item> -->
-<!-- 	<guid>https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html</guid> -->
+<!-- 	<guid>https://eggbert.xyz/blogs/{PATH_TO_BLOG}.html</guid> -->
 <!-- 	<title>{TITLE}</title> -->
-<!-- 	<link>https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html</link> -->
+<!-- 	<link>https://eggbert.xyz/blogs/{PATH_TO_BLOG}.html</link> -->
 <!-- 	<pubDate>{DAY_OF_THE_WEEK}, {DAY} {MONTH} {YEAR}</pubDate> -->
 <!-- 	<description> -->
 <!-- 		<![CDATA[ -->
@@ -233,7 +252,7 @@
 <!-- 				<title>{TITLE}</title> -->
 <!-- 			</head> -->
 <!-- 			<body> -->
-<!-- 				<h1><a href="https://eggbertfluffle.github.io/blogs/{PATH_TO_BLOG}.html">{TITLE}</a></h1> -->
+<!-- 				<h1><a href="https://eggbert.xyz/blogs/{PATH_TO_BLOG}.html">{TITLE}</a></h1> -->
 <!-- 			</body> -->
 <!-- 		</html> -->
 <!-- 		]]> -->

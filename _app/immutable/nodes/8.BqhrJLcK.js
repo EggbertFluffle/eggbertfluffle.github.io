@@ -1,37 +1,12 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<title>Harrison DiAmbrosio</title>
-		<meta charset="utf-8" />
-		<meta name="author" content="Harrison DiAmbrosio" />
-		<meta name="dscription" content="Personal site and blog" />
-		<meta name="keywords" content="HTML, CSS, JavaScript, computer science, graphics">
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="../_app/immutable/assets/2.BWc5Yfsn.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/ThemePicker.BeoFIKDJ.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.BBVh3S6N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.D4W3-yCQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.DDaOzR71.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BkdrutWN.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.IUXyldyF.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXL903QX.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DbP1s1la.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/2.Ci1y03B7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.CI5fGfHs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/8.BqhrJLcK.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-1qtfkri"><option id="gruvbox" value="gruvbox" class="svelte-1qtfkri" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-1qtfkri" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-1qtfkri" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-1qtfkri" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-1vfhz2j"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="linux-on-a-laptop-my-experience-pt.1" data-svelte-h="svelte-cw8xb1">Linux on a Laptop: My
-Experience (pt.1)</h1> <h2 id="introduction" data-svelte-h="svelte-p88ani">Introduction</h2> <p data-svelte-h="svelte-76jywo">Recently, I got a ThinkPad T16 as a new laptop for school, and with
+import{a as $,n as U}from"../chunks/scheduler.DDaOzR71.js";import{S as ee,i as te,e as o,s as l,c as i,g as s,a as r,h as S,j as n,f as a}from"../chunks/index.CXL903QX.js";function ne(Z){let h,G=`Linux on a Laptop: My
+Experience (pt.1)`,I,d,B="Introduction",C,p,V=`Recently, I got a ThinkPad T16 as a new laptop for school, and with
 such a large intersection between the ThinkPad and Linux communities, I
 had to install GNU/Linux on my new daily driver system. There are a
 couple reasons for this, mainly due to its simplicity (in my opinion).
 Many people post memes online that are captioned “Installing a web
 browser on Linux,” and a video of a monitor with a waterfall of text
 flies down in a temrinal, mimmicing some supposedly very verbose package
-manager.</p> <p data-svelte-h="svelte-28i209">Although they might be right, there’s a lot of text. This happens
+manager.`,L,c,W=`Although they might be right, there’s a lot of text. This happens
 after the user does practically nothing to install this program, when
 compared to the process on Windows or a Mac. The elegance of halving
 almost all the programs you will ever need at your finger tips A simple
@@ -39,12 +14,12 @@ almost all the programs you will ever need at your finger tips A simple
 Windows way of installing programs impossible. Another reason for
 GNU/Linux is the customizability of things such as window managers,
 scripts, keybinds, and privacy (although privacy isn’t often my first
-concern).</p> <p data-svelte-h="svelte-vkyond">I want to go over my experience with most of these, and I intend to
+concern).`,T,f,D=`I want to go over my experience with most of these, and I intend to
 do this over a couple parts, even though the last time I made a part 1,
 the Minecraft Clone, I dropped the project immediately after, haha. For
 this post, I just intend to talk about why GNU/Linux and why Void Linux,
 then I’ll touch on window managers, commonly used programs and keybinds,
-as well as some laptop-specific configurations.</p> <h2 id="gnulinux" data-svelte-h="svelte-fi65ar">GNU/Linux</h2> <p data-svelte-h="svelte-eg4e0g">I would really say only two reasons exist for me choosing GNU/Linux,
+as well as some laptop-specific configurations.`,_,u,F="GNU/Linux",P,y,J=`I would really say only two reasons exist for me choosing GNU/Linux,
 and I really did go back and forth between planning to run Linux or not
 for some time. I had to balance what I wanted in a laptop, for example,
 with Windows, I would be given support in a lot of areas as Windows is a
@@ -55,14 +30,14 @@ connectivity, controlling the keyboard backlight, and many more. The
 thing is, this argument falls through for someone like me, where I
 actually find it fascinating that even after buying a device, I have to
 put it together. This feels almost like a Lego set, but on the software
-side and with no instructions in the box.</p> <p data-svelte-h="svelte-5dmnfb">That being said, it’s obvious that a desktop environment was not in
+side and with no instructions in the box.`,j,g,R=`That being said, it’s obvious that a desktop environment was not in
 the question, even though I do like the ideas behind and visuals of some
 desktop environments, such as Artix Linux, but if I was going to run
 GNU/Linux on the laptop, after using Void on my desktop and having a
 workflow I was familiar with, I wasn’t going to drastically change
 things. So that comes to be the first reason I was attracted to
 Linux—the perk of having to essentially build my system to my needs and
-likings.</p> <p data-svelte-h="svelte-1tkv86z">The second reason is just because of the tools Linux brings to my
+likings.`,M,w,E=`The second reason is just because of the tools Linux brings to my
 fingertips. Setting up programs like Neovim is a piece of cake with the
 ease of dotfiles and the simplicity of package managers. I also
 frequently use the <a href="https://sourceware.org/gdb/">GNU Project
@@ -72,7 +47,7 @@ clever naming. Additionally, I frequently utilize Makefiles and find
 dependency management on Linux very straight-forward when it comes to
 c/c++ development. Furthermore, Linux has support for <a href="https://bun.sh/">Bun</a>, my Javscript runtime and package manager
 of choice, as well as being quite simple to setup a coding environment
-for other languages.</p> <p data-svelte-h="svelte-7g9wpx">For example, previously, I was running Debian Bookworm on a virtual
+for other languages.`,H,v,O=`For example, previously, I was running Debian Bookworm on a virtual
 machine on my school ChromeBook. While I did mostly JS and C++
 development on there, I was part of the Robotics Team (The Technological
 Terrors: Team 5438) and had to look over the robot’s code. I had never
@@ -83,7 +58,7 @@ as cloning the repo, installing a Java LSP through Mason in Neovim, and
 running a simple build script to check for errors. This really astounded
 me and made it really easy to jump into foreign projects with more
 confidence that I wasn’t going to be bogged down by the complexity or
-hiccups that came with programming on Linux.</p> <h2 id="void-linux" data-svelte-h="svelte-1jdjncn">Void Linux</h2> <p data-svelte-h="svelte-1w33zvq">Void Linux was a pretty arbitrary choice, honestly. It was first
+hiccups that came with programming on Linux.`,N,m,Y="Void Linux",q,x,K=`Void Linux was a pretty arbitrary choice, honestly. It was first
 because of a recommendation from a friend, <a href="https://squi.bid">squibid</a>, as a pretty minimal and also,
 interestingly, not derived from any other more common distro, say Arch
 or Debian. This attracted me just because it was its own contender in
@@ -93,7 +68,7 @@ itself, and certainly a lot of praise for it’s package manager, or
 managers depending how you look at it <a href="https://github.com/void-linux/xbps">xbps</a>. My only gripe was
 that I found <code>xbps-install</code> a bit cumbersome to type out, but
 a simple alias to <code>xi</code>, or even better, a program called <a href="https://github.com/zdykstra/fuzzypkg">fuzzypkg</a> makes finding
-and installing packages far easier (also shown to me by Squibid).</p> <p data-svelte-h="svelte-2f3bak">Then there is the obvious use of runit over systemd as an init
+and installing packages far easier (also shown to me by Squibid).`,z,b,Q=`Then there is the obvious use of runit over systemd as an init
 system, but from my experience, I don’t interact with the init system
 enough for it to make a severe impact on my opinion, this was kind of
 just more fuel to the fire because of all the system hate I found
@@ -106,56 +81,6 @@ installed, but I didn’t feel like I knew what was happening and
 certainly didn’t understand my system much better afterward. I have also
 installed Debian on bare metal, and that came with a GUI installer,
 which I really appreciated and wanted a similarly hand-held
-experience.</p> <p data-svelte-h="svelte-1or1ou9">Beyond the install process and the package manager, most Linux
+experience.`,A,k,X=`Beyond the install process and the package manager, most Linux
 distros seem the same to me, so again, I’m not very picky and was very
-open to suggestions, therefore, Void Linux it was!</p> </main> 
-			
-			<script>
-				{
-					__sveltekit_zlyl0z = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.BBVh3S6N.js"),
-						import("../_app/immutable/entry/app.IUXyldyF.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2, 8],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-	<style>
-		* {
-			margin: 0px;
-			padding: 0px;
-			scroll-behavior: smooth;
-		}
-
-		body {
-			background-color: #3c3836;
-		}
-
-		@font-face {
-			font-family: 'MonaspaceKR';
-			font-style: normal;
-			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
-		}
-
-		@font-face {
-			font-family: 'Ioskeva';
-			font-style: normal;
-			src: url('/fonts/Iosevka.ttf');
-		}
-	</style>
-</html>
+open to suggestions, therefore, Void Linux it was!`;return{c(){h=o("h1"),h.textContent=G,I=l(),d=o("h2"),d.textContent=B,C=l(),p=o("p"),p.textContent=V,L=l(),c=o("p"),c.textContent=W,T=l(),f=o("p"),f.textContent=D,_=l(),u=o("h2"),u.textContent=F,P=l(),y=o("p"),y.textContent=J,j=l(),g=o("p"),g.textContent=R,M=l(),w=o("p"),w.innerHTML=E,H=l(),v=o("p"),v.textContent=O,N=l(),m=o("h2"),m.textContent=Y,q=l(),x=o("p"),x.innerHTML=K,z=l(),b=o("p"),b.innerHTML=Q,A=l(),k=o("p"),k.textContent=X,this.h()},l(e){h=i(e,"H1",{id:!0,"data-svelte-h":!0}),s(h)!=="svelte-cw8xb1"&&(h.textContent=G),I=r(e),d=i(e,"H2",{id:!0,"data-svelte-h":!0}),s(d)!=="svelte-p88ani"&&(d.textContent=B),C=r(e),p=i(e,"P",{"data-svelte-h":!0}),s(p)!=="svelte-76jywo"&&(p.textContent=V),L=r(e),c=i(e,"P",{"data-svelte-h":!0}),s(c)!=="svelte-28i209"&&(c.textContent=W),T=r(e),f=i(e,"P",{"data-svelte-h":!0}),s(f)!=="svelte-vkyond"&&(f.textContent=D),_=r(e),u=i(e,"H2",{id:!0,"data-svelte-h":!0}),s(u)!=="svelte-fi65ar"&&(u.textContent=F),P=r(e),y=i(e,"P",{"data-svelte-h":!0}),s(y)!=="svelte-eg4e0g"&&(y.textContent=J),j=r(e),g=i(e,"P",{"data-svelte-h":!0}),s(g)!=="svelte-5dmnfb"&&(g.textContent=R),M=r(e),w=i(e,"P",{"data-svelte-h":!0}),s(w)!=="svelte-1tkv86z"&&(w.innerHTML=E),H=r(e),v=i(e,"P",{"data-svelte-h":!0}),s(v)!=="svelte-7g9wpx"&&(v.textContent=O),N=r(e),m=i(e,"H2",{id:!0,"data-svelte-h":!0}),s(m)!=="svelte-1jdjncn"&&(m.textContent=Y),q=r(e),x=i(e,"P",{"data-svelte-h":!0}),s(x)!=="svelte-1w33zvq"&&(x.innerHTML=K),z=r(e),b=i(e,"P",{"data-svelte-h":!0}),s(b)!=="svelte-2f3bak"&&(b.innerHTML=Q),A=r(e),k=i(e,"P",{"data-svelte-h":!0}),s(k)!=="svelte-1or1ou9"&&(k.textContent=X),this.h()},h(){S(h,"id","linux-on-a-laptop-my-experience-pt.1"),S(d,"id","introduction"),S(u,"id","gnulinux"),S(m,"id","void-linux")},m(e,t){n(e,h,t),n(e,I,t),n(e,d,t),n(e,C,t),n(e,p,t),n(e,L,t),n(e,c,t),n(e,T,t),n(e,f,t),n(e,_,t),n(e,u,t),n(e,P,t),n(e,y,t),n(e,j,t),n(e,g,t),n(e,M,t),n(e,w,t),n(e,H,t),n(e,v,t),n(e,N,t),n(e,m,t),n(e,q,t),n(e,x,t),n(e,z,t),n(e,b,t),n(e,A,t),n(e,k,t)},p:U,i:U,o:U,d(e){e&&(a(h),a(I),a(d),a(C),a(p),a(L),a(c),a(T),a(f),a(_),a(u),a(P),a(y),a(j),a(g),a(M),a(w),a(H),a(v),a(N),a(m),a(q),a(x),a(z),a(b),a(A),a(k))}}}class ie extends ee{constructor(h){super(),te(this,h,null,ne,$,{})}}export{ie as component};
