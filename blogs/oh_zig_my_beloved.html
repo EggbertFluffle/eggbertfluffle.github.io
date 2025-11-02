@@ -9,21 +9,21 @@
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="../_app/immutable/assets/2.BWc5Yfsn.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/2.C6eeKdgg.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/ThemePicker.BeoFIKDJ.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.BBVh3S6N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.D4W3-yCQ.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.BO_uRxjf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CSn5BQpl.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.DDaOzR71.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.BkdrutWN.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.IUXyldyF.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.CzNSMHcN.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXL903QX.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.DbP1s1la.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/2.Ci1y03B7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.ivihi0JA.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.CI5fGfHs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/13.Beg_E2FB.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/13.C3HQM4Fx.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-1qtfkri"><option id="gruvbox" value="gruvbox" class="svelte-1qtfkri" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-1qtfkri" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-1qtfkri" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-1qtfkri" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-1vfhz2j"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="oh-zig-my-beloved" data-svelte-h="svelte-uanao7">Oh Zig my Beloved</h1> <p data-svelte-h="svelte-u1yxis">For a while now, I have been learning the deep intricacies of C++.
+		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-1qtfkri"><option id="gruvbox" value="gruvbox" class="svelte-1qtfkri" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-1qtfkri" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-1qtfkri" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-1qtfkri" data-svelte-h="svelte-eggm1l">Tokyo-Night</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-686ixn"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="oh-zig-my-beloved" data-svelte-h="svelte-uanao7">Oh Zig my Beloved</h1> <p data-svelte-h="svelte-u1yxis">For a while now, I have been learning the deep intricacies of C++.
 The more I learn about the language, the faster I see that I will never
 know anywhere close to all of it until I embody the life of <a href="https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw">Jason
 Turner</a>. I don’t expect to know <strong>all</strong> of any language
@@ -67,13 +67,13 @@ true, but recently, Zig has been trying to steer away from what they
 called “managed” allocation, over to “unmanaged” allocation. The
 difference lies in when the allocator is given to the data structure,
 either at initialization of the structure of for each allocation made by
-it.</p> <div class="sourceCode" id="cb1" data-svelte-h="svelte-qshdh6"><pre class="sourceCode zig"><code class="sourceCode zig"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Managed ArrayList</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> arr <span class="op">=</span> std<span class="op">.</span>ArrayList(<span class="dt">i32</span>)<span class="op">.</span>init(std<span class="op">.</span>heap<span class="op">.</span>page_allocator);</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span> arr<span class="op">.</span>append(<span class="dv">32</span>);</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Unamanaged ArrayList</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> arr <span class="op">=</span> std<span class="op">.</span>ArrayList(<span class="dt">i32</span>)<span class="op">.</span>init();</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span> arr<span class="op">.</span>append(<span class="dv">32</span><span class="op">,</span> std<span class="op">.</span>heap<span class="op">.</span>page_allocator);</span></code></pre></div> <p data-svelte-h="svelte-1m9r6n0">The unmanaged approach is something I’m not used to, but willing to
+it.</p> <div class="sourceCode" id="cb1" data-svelte-h="svelte-8i6zjc"><pre class="sourceCode zig"><code class="sourceCode zig"><span id="cb1-1"><span class="co">// Managed ArrayList</span></span>
+<span id="cb1-2"><span class="at">const</span> arr <span class="op">=</span> std<span class="op">.</span>ArrayList(<span class="dt">i32</span>)<span class="op">.</span>init(std<span class="op">.</span>heap<span class="op">.</span>page_allocator);</span>
+<span id="cb1-3"><span class="cf">try</span> arr<span class="op">.</span>append(<span class="dv">32</span>);</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co">// Unamanaged ArrayList</span></span>
+<span id="cb1-6"><span class="at">const</span> arr <span class="op">=</span> std<span class="op">.</span>ArrayList(<span class="dt">i32</span>)<span class="op">.</span>init();</span>
+<span id="cb1-7"><span class="cf">try</span> arr<span class="op">.</span>append(<span class="dv">32</span><span class="op">,</span> std<span class="op">.</span>heap<span class="op">.</span>page_allocator);</span></code></pre></div> <p data-svelte-h="svelte-1m9r6n0">The unmanaged approach is something I’m not used to, but willing to
 try out. But as the header suggests, this is about the ugly. Although
 the error handling is comprehensive, I find when I just want to crank
 out some code to solve a problem, or for <a href="https://adventofcode.com">Advent of Code</a>, it just gets in the
@@ -83,7 +83,7 @@ picking. Ok enough waffling.</p> </main>
 			
 			<script>
 				{
-					__sveltekit_zlyl0z = {
+					__sveltekit_kgkji7 = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -92,8 +92,8 @@ picking. Ok enough waffling.</p> </main>
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.BBVh3S6N.js"),
-						import("../_app/immutable/entry/app.IUXyldyF.js")
+						import("../_app/immutable/entry/start.BO_uRxjf.js"),
+						import("../_app/immutable/entry/app.CzNSMHcN.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2, 13],
