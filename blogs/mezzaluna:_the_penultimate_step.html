@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Harrison DiAmbrosio</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Harrison DiAmbrosio" />
+		<meta name="dscription" content="Personal site and blog" />
+		<meta name="keywords" content="HTML, CSS, JavaScript, computer science, graphics">
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/2.DNwI7eJ9.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ThemePicker.PtD0QE9l.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Cr_k2neh.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.RoCxsOHO.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.DDaOzR71.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.BkdrutWN.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.DxOH1ebG.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXL903QX.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DbP1s1la.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.BP4LYuuE.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.NhjO9eH0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/11.DMq91Pjt.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-s3cdxt"><option id="gruvbox" value="gruvbox" class="svelte-s3cdxt" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-s3cdxt" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-s3cdxt" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-s3cdxt" data-svelte-h="svelte-eggm1l">Tokyo-Night</option><option id="gruber_darker" value="gruber_darker" class="svelte-s3cdxt" data-svelte-h="svelte-gvzre8">Gruber Darker</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-81asgv"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="mezzaluna-the-penultimate-step" data-svelte-h="svelte-93f9jn">Mezzaluna: The Penultimate
+Step</h1> <p data-svelte-h="svelte-1me4v6t">So I very quickly fell out of the habit of writing once a week.
+Nothing really more to say about that, who’s bad at breaking good habits
+anyway. I have gathered you all here today to tell a tale. A journey as
+trecherous as any other, riddled with large obstacles and the thickest
+of thick fogs. Together with my partner, <a href="https://squi.bid">Squibid</a>, we draw a weapon of
+might. Two handles, one blade. But right now, in this very moment, the
+blade is dull, having knicks and chips all over. Even so, its potential
+shines through and is immediatly recognizable as a noble, tride and
+true, mezzaluna. Well gosh, what is a mezzaluna anyhow?</p> <div style="display: flex; justify-content: center;" data-svelte-h="svelte-ncebbg"><img style="width: 30%;" src="/images/mezzaluna.png" alt="An evenly curved blade with wooden handles on both ends"></div> <p data-svelte-h="svelte-afyf9g">It’s just a knife, with a curved blade, used to cut herbs,
+vegetables, and sometimes pizza. It also seems to be a style of pasta,
+simmilar to ravioli (my favorite btw), but that’s unrelated.</p> <h2 id="blogavator-pitch" data-svelte-h="svelte-g87auz">Blogavator Pitch</h2> <p data-svelte-h="svelte-74wuam">But why do <a href="https://squi.bid">Squibid</a> and I have a mezzaluna? Well the more proper way
+to put it would be that we have created <a href="https://MezzalunaWM/Mezzaluna">Mezzaluna</a>, a new, <strong>work
+in progress</strong>, <a href="https://wayland.freedesktop.org/">Wayland</a> compositor. The focus of the project is to
+maintain approachability and customizability as core qualities. This is
+accomplished by giving the compositor the best dang gum <a href="https://www.lua.org">Lua</a> API this
+world shall ever behold, modeled of the current best Lua API in the
+world, <a href="https://neovim.io/">Neovim’s</a>. This in combination with a batteries included, default
+configuration allows for a window manager novice to get up and running
+fast, given Lua’s incredibly shallow learning curve. In the same way,
+the other side of the coin reveals that simply reading a little bit of
+the config would allow an intermediate or advanced user to creatively
+form the compositor of their dreams, without any of headache that comes
+with writing from scratch. Essentially we are giving you a completely
+built Lego™️ set to play with, <strong>AND</strong> all the Lego™️’s you
+could ever want. Now how about that.</p> <h2 id="the-future-is-bright" data-svelte-h="svelte-eamj6b">The Future is Bright</h2> <p data-svelte-h="svelte-plgyf7">Development started super strong, with a lot of reasearch, reading
+source code, and trying to understand what parts need to go where to
+make the thing do the thing. Luckily right now, it kinda does the thing!
+As of writing, we have a decent api (though far from complete or final)
+allowing the manipulation of window position and size as well as fairly
+complex keybinds and some elementary hook based events. The hooks were
+actually an idea I though worked really well in emacs, suggesting its
+inclusion as part of the main design philosophy of Mezzaluna. Using this
+said API, we have cobbled together a terrible “mimic” of the classic <a href="https://dwm.suckless.org">DWM</a>
+workflow, sans the ability to organize windows by tags. I don’t intend
+to reveal too much, as that would give me a reason to write more blogs,
+but I’m so excited for this project that I could go on and on and
+on.</p> <p data-svelte-h="svelte-15ni27v">If you wan’t to <a href="https://github.com/MezzalunaWM/Mezzaluna">check the project out</a>, you’ll just need <a href="https://gitlab.freedesktop.org/wlroots/wlroots">wlroots-0.19</a>,
+<a href="https://www.pixman.org/">pixman</a>, <a href="https://xkbcommon.org/">xkbcommon</a>, and <a href="https://ziglang.org/">Zig 0.15</a>. The default config can be seen within
+<code>runtime/share/mezzaluna/init.lua</code>. Feel free to have fun
+with it, reach out with questions (hdiambrosio@gmail.com) or just talk about it! And absolutely
+check out <a href="https://squi.bid">Squibid’s page</a> for a fine time
+reading or exploring C projects you never knew you needed.</p> </main> 
+			
+			<script>
+				{
+					__sveltekit_5gf3le = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.Cr_k2neh.js"),
+						import("../_app/immutable/entry/app.DxOH1ebG.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 11],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-color: #3c3836;
+		}
+
+		@font-face {
+			font-family: 'MonaspaceKR';
+			font-style: normal;
+			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
+		}
+
+		@font-face {
+			font-family: 'Ioskeva';
+			font-style: normal;
+			src: url('/fonts/Iosevka.ttf');
+		}
+	</style>
+</html>

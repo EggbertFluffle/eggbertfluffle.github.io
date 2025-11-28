@@ -236,6 +236,25 @@
 				]]>
 			</description>
 		</item>
+		<item>
+			<guid>https://eggbert.xyz/blogs/mezzaluna:_the_penultimate_step.html</guid>
+			<title>Mezzaluna: The Penultimate Step</title>
+			<link>https://eggbert.xyz/blogs/mezzaluna:_the_penultimate_step.html</link>
+			<pubDate>Thursday, November 27th 2025</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Mezzaluna: The Penultimate Step</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbert.xyz/blogs/mezzaluna:_the_penultimate_step.html">Mezzaluna: The Penultimate Step</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
 	</channel>
 </rss>
 
