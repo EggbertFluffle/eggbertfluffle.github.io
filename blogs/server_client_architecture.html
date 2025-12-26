@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Harrison DiAmbrosio</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Harrison DiAmbrosio" />
+		<meta name="dscription" content="Personal site and blog" />
+		<meta name="keywords" content="HTML, CSS, JavaScript, computer science, graphics">
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/2.DNwI7eJ9.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ThemePicker.PtD0QE9l.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DUd-KWi0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.DY7yPRpK.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.DDaOzR71.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.BkdrutWN.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BHfTeQm6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXL903QX.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DbP1s1la.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.BP4LYuuE.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ThemePicker.NhjO9eH0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/16.DAdC3lNW.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <select style="--background1: #3c3836; --foreground: #ebdbb2; --red: #fb4934;" class="svelte-s3cdxt"><option id="gruvbox" value="gruvbox" class="svelte-s3cdxt" data-svelte-h="svelte-rv1l6r">Gruvbox</option><option id="ashen" value="ashen" class="svelte-s3cdxt" data-svelte-h="svelte-kb510b">Ashen</option><option id="dracula" value="dracula" class="svelte-s3cdxt" data-svelte-h="svelte-tafl5e">Dracula</option><option id="tokyo_night" value="tokyo_night" class="svelte-s3cdxt" data-svelte-h="svelte-eggm1l">Tokyo-Night</option><option id="gruber_darker" value="gruber_darker" class="svelte-s3cdxt" data-svelte-h="svelte-gvzre8">Gruber Darker</option></select> <main style="--background1: #3c3836; --background2: #282828; --foreground: #ebdbb2; --red: #fb4934; --blue: #83a598; --yellow: #fabd2f; --purple: #d3869b; --orange: #fe8019; --green: #b8bb26; --aqua: undefined; --grey: #928374;" class="svelte-81asgv"><a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;" data-svelte-h="svelte-1bmlwdn">&lt; Back</a> <h1 id="in-praise-of-the-client-server-architecture" data-svelte-h="svelte-125wy9u">In Praise of the
+Client Server Architecture</h1> <p data-svelte-h="svelte-1csi2x4">I have recently been thinking about the server/client architecture in
+regards to designing software. This came about when I was talking to a
+friend about how eveytime I hear about multiplayer game development, its
+almost unanimous that its a good idea to build with multiplayer in mind
+from the start. Adding multiplayer to games later into development is
+said to be hard. This lead me to think about games where the multiplayer
+is well done, vs games where the multiplayer experience is often really
+poor. Then this lead me to realize I use this style software everywhere
+from text editors, games and even audio backends. Its far more prevelant
+than I first assumed, but why? First I want to look at what makes a good
+multiplayer experience because I think its just the most obvious first
+step when talking about server/client architecture in software.</p> <h2 id="multiplayer-games" data-svelte-h="svelte-g6xo3j">Multiplayer games</h2> <p data-svelte-h="svelte-18v643r">So I have claimed that Minecraft has well done multiplayer, but why?
+Just to avoid confusion, I am only talking about the Java Edition of the
+game, since I don’t want to think about Microsoft magic in this context
+to make things more confusing. Minecraft has two parts, no matter what,
+the server and the client. These two always exist. When starting a
+standard server, one person must download the server files for the game,
+run the <code>server.jar</code> using <code>java</code> and bam, you’re
+server is up. Then everyone else will use a Minecraft client, what we
+typically call the “game”, and connect to it using a local, public or
+even loopback ip address. But what is this loopback address. Without
+going into the weeds, <code>localhost</code> and <code>127.0.0.1</code>
+both point <strong>your computer</strong> to <strong>your
+computer</strong>. But why is this important? We’ll it turns out,
+because Minecraft is designed with the server/client architecture, the
+same steps for connecting to a server also happen when playing
+singleplayer.</p> <p data-svelte-h="svelte-f2brg3">When someone pressed play on their world. The Minecraft Client
+actually starts a seperate process to be the Minecraft server for the
+client to connect to. Using the computer’s loopback address to find the
+newly created server. Now you might think “gee wiz, this seems like a
+lot of work just to play a singleplayer game”. I would like to offer
+this as a rebuttal. If you have ever hosted a world via LAN, you know
+how easy it is. Open a signgleplayer world, then pause the game, and
+select <code>Open to LAN</code>. You don’t have to stop the game, you
+don’t need to fiddle with menus, and it’s most importantly fast. That’s
+because the game was designed with multilayer in mind, and since playing
+in singleplayer already starts a local server, all the game needs to do
+is allow local ip addresses to connect, not just loopback addresses. You
+can take this a step further with mods like <a href="https://e4mc.link/">e4mc</a> or <a href="https://essential.gg/en">essentials</a> that tunnel your local ip
+through a public server allowing you to make you’re world publically
+joinable via a special link without needing a domain name or to
+configure port forwarding. This is amazing because all of these
+operations, and the increasing levels of publicity are very quick tasks
+since they are simple modifications on the games already existing
+behaviour.</p> <p data-svelte-h="svelte-1joe548">On top of this, the general minecraft multiplayer experience is nice
+considering lag and poor performance is always the fault of the server,
+and never the fault of clients. The Binding of Isaac very recently added
+an online multiplayer mode, very very late into development at this
+point. The problem being, though I don’t know the spesifics, the game
+was not designed with multiplayer since the start, and as a result, the
+experience is very poor. Online games are not bottlenecked by the
+serverbut instead bottlenecked by the worst connection of the all of the
+clients connected to the server. This makes no sense at all, leaving
+players with good connection having the quality of gameplay that only
+the player with the worst connection. The entire game becomes jittery
+and unplayably slow, often taking ages to finish. Although I don’t know
+the spesifics of Super Smash Brothers Ultimate’s multiplayer, they
+certainly suffer the same effects, where performace tanks for both
+clients if one has poor connectivity.</p> <h2 id="more-important-software" data-svelte-h="svelte-ifov1u">More Important Software</h2> <p data-svelte-h="svelte-g0zcgk">Now moving onto other types of software and why the server client
+architecture is so powerful. Let’s take a theoretical, highly
+customizable text editor / IDE, which we will call “Tegg” (Text + Egg).
+This editor has a lot of configuration with extensions, complex config
+files, and several processes it needs to start. Let’s say for example
+that we start to see a significant decline in the startup time of Tegg,
+because of the intensive init routine. One great way to solve this is
+lazy load features, leaving parts of the previously described init
+process for until needed, instead of all at once in the beggining.
+That’s a great solution, but let’s also imagine that this doesn’t
+entirely solve the issue, since there are too many tasks that cannot be
+lazily executed. Everytime we open the editor to do something, it takes
+time, or if we want two instances of the editor, we need to expend
+double the resources. This can be solved with the server/client
+architecture, while making the software more flexible and
+lightweight.</p> <p data-svelte-h="svelte-ndfwiq">For this, I will use Emacs as an example, since in describing “Tegg”,
+I was secretly describing Emacs all along. When installing Emacs two
+binaries become available to the user: <code>emacs</code> and
+<code>emacsclient</code>. Huh, that’s strange. Surely the existance of
+an <code>emacsclient</code> implies there exists an
+<code>emacsserver</code>, no? Yes, it does! Emacs cleverly tucks the
+emacs server into a flag of the <code>emacs</code> binary, which can be
+started using <code>emacs --bg-daemon</code>. This allows for the more
+normal way of starting the program as just <code>emacs</code>, which I’m
+assuming starts a local emacs server anyways. In doing so, Emacs will
+launch itself as a background daemon acting as a server, doing all the
+initial loading of plugins, starting processes and executing the user’s
+config, until finally waiting for an <code>emacsclient</code> to connect
+to it. The <code>emacsclient</code> is indistinguashable from the
+standard binary itself, sans the incredibly swift startuptime. This also
+opens the door to multiple clients being open at once with nearly no
+performance cost, clients maintaining state between opening and closing
+application windows, and far more freedom for use of emacs when, for
+example, connecting to a running Emacs server remotely. This starting of
+the Emacs server can be tucked nicely with other necessary system
+startup like window managers, audio backends and system critical
+background processes.</p> <p data-svelte-h="svelte-1xh5bbm">This was just a simple look at the client/server architecture model,
+which I have really come to appreciate recently. There are for more
+interesting applications that I haven’t mentioned, such as headless
+instances of popular programs like Firefox and MPV, or language server
+protocols and debug adapters in the text editing space.</p> </main> 
+			
+			<script>
+				{
+					__sveltekit_1ry7sly = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DUd-KWi0.js"),
+						import("../_app/immutable/entry/app.BHfTeQm6.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 16],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-color: #3c3836;
+		}
+
+		@font-face {
+			font-family: 'MonaspaceKR';
+			font-style: normal;
+			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
+		}
+
+		@font-face {
+			font-family: 'Ioskeva';
+			font-style: normal;
+			src: url('/fonts/Iosevka.ttf');
+		}
+	</style>
+</html>
